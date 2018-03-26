@@ -177,6 +177,7 @@
   font-family: 'ProximaNova';
   font-weight: 600;
   font-size: 15 px;
+  border-radius: 2px;
 }
 
 .my-button{
@@ -185,6 +186,7 @@
   font-size: 15 px;
   padding: 10px 40px;
   position: relative;
+  border-radius: 2px;
 }
 
 .my-button: :after{
@@ -196,7 +198,6 @@
   height: 18px;
   position: absolute;
   right: 15px;
-  border-radius: 4px
 }
 
 .social-buttoms{
