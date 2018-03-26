@@ -1,3 +1,50 @@
+@font-face{
+  src: url("./fonts/AvenirNext/AvenirNextCyr-Regular.ttf");
+  font-family: 'AvenirNextCyr';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/AvenirNext/AvenirNextCyr-Medium.ttf");
+  font-family: 'AvenirNextCyr';
+  font-weight: 500;
+}
+
+@font-face{
+  src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+  font-family: 'OpenSans';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/OpenSans/OpenSans-Light.ttf");
+  font-family: 'OpenSans';
+  font-weight: 100;
+}
+
+@font-face{
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/ProximaNova/ProximaNova-Reg.otf");
+  font-family: 'ProximaNova';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf");
+  font-family: 'ProximaNova';
+  font-weight: 600;
+}
+
+.my-body{
+  font-family: 'OpenSans';
+  font-weight: 300;
+}
+
 .main-menu{
   display: flex;
   justify-content: space-between;
@@ -17,6 +64,8 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
+  font-family: 'AvenirNextCyr';
+  font-weight: 500;
 }
 
 .header{
@@ -32,6 +81,8 @@
   margin-top: 300px;
   margin-left: 50px;
   text-transform: uppercase;
+  font-family: 'AvenirNextCyr';
+  font-weight: 300;
 }
 
 .subtitle{
@@ -39,6 +90,8 @@
   font-size: 15px;
   margin-left: 200px;
   text-transform: uppercase;
+  font-family: 'AvenirNextCyr';
+  font-weight: 300;
 }
 
 .main{
@@ -61,6 +114,8 @@
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
+  font-family: 'ProximaNova';
+  font-weight: 300;
 }
 
 .benefits__title{
@@ -80,6 +135,7 @@
 .title-green{
   color: #a2ca28;
   font-size: 35px;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
@@ -108,4 +164,77 @@
 .sequence{
   display: flex;
   justify-content: center;
+}
+
+.my-footer{
+  background: #000;
+  display: flex;
+}
+
+.my-input{
+  padding: 10px;
+  border: 1px solid;
+  font-family: 'ProximaNova';
+  font-weight: 600;
+  font-size: 15 px;
+}
+
+.my-button{
+  background: #a2ca28;
+  color: #fff;
+  font-size: 15 px;
+  padding: 10px 40px;
+  position: relative;
+}
+
+.my-button: :after{
+  content: '';
+  display: inline-block;
+  background-image: url("./images/yt.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 15px;
+  border-radius: 4px
+}
+
+.social-buttoms{
+  list-style: none;
+  display: flex;
+}
+
+.social{
+ height: 48px;
+ width: 48px;
+ border-radius: 50%;
+ margin-left: 20px;
+ position: relative;
+}
+
+.fb{
+  background: #2e3192
+}
+
+.fb: :before{
+  content: '';
+  background-image: url("./images/fb.svg");
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.tw{
+ background: #00aeef
+}
+
+.yt{
+
+}
+
+.ln{
+
 }
