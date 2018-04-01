@@ -113,6 +113,7 @@
 
 .main{
   background: #a2ca28;
+  min-width: 1500px;
 }
 
 .benefits{
@@ -221,30 +222,10 @@
   top: 50%;
   margin-top: -24px;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
 .images:hover .images-hover{
- opacity: 1;
-}
-
-.images:hover::before{
-  opacity: 1;
-}
-
-.images-hover2{
-  transition: all 0.5s;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  margin-top: -24px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.images:hover .images-hover2{
  opacity: 1;
 }
 
@@ -257,6 +238,7 @@
   display: flex;
   justify-content: center;
   padding: 60px 0px 30px 0px;
+  min-width: 1500px;
 }
 
 .my-input{
@@ -264,10 +246,9 @@
   border: 0px solid;
   font-family: 'ProximaNova';
   font-weight: 300;
-  font-size: 15 px;
+  font-size: 15px;
   border-radius: 2px;
   height: 25px;
-  margin-left: 45px;
 }
 
 .my-input2{
@@ -275,7 +256,7 @@
   border: 0px solid;
   font-family: 'ProximaNova';
   font-weight: 300;
-  font-size: 15 px;
+  font-size: 15px;
   border-radius: 2px;
   height: 25px;
 }
@@ -291,7 +272,7 @@
   border-radius: 2px;
   border: 0px solid;
   margin-right: 120px;
-  height: 47px;
+  height: 46px;
 }
 
 .my-button:after{
@@ -374,7 +355,7 @@
 
 .yt:before{
   content: '';
-  background-image: url("./images/ln.svg");
+  background-image: url("./images/yt.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -396,7 +377,7 @@
   content: '';
   background-image: url("./images/ln.svg");
   background-repeat: no-repeat;
-  width: 18px;
+  width: 20px;
   height: 18px;
   display: block;
   position: absolute;
