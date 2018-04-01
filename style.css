@@ -120,7 +120,7 @@
   justify-content: space-between;
   list-style: none;
   max-width: 1100px;
-  min-width: 900px;
+  min-width: 1100px;
   margin: 0 auto;
   color: #ffffff;
   padding-top: 90px;
@@ -142,8 +142,14 @@
   font-size: 14px;
   font-family: 'ProximaNova';
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.7;
   width: 250px;
+  height: 110px;
+  padding-top: 20px;
+}
+
+.row{
+  padding-top: 15px;
 }
 
 .title-red{
@@ -159,11 +165,15 @@
   font-size: 35px;
   font-weight: 100;
   text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .text-gray{
   color: #656e74;
   font-size: 14px;
+  margin: 15px 15px 5px 15px;
+  line-height: 1.7;
 }
 
 .link-square{
@@ -175,10 +185,12 @@
   background: #ffffff;
   text-align: center;
   padding: 15px;
+  width: 325px;
+  padding-top: 55px;
 }
 
 .all_sequence{
-  padding-top: 80px;
+  padding-top: 105px;
 }
 
 .sequence{
@@ -188,7 +200,7 @@
 
 .images{
   position: relative;
-  height: 394px;
+  height: 375px;
 }
 
 .images::before{
@@ -241,20 +253,31 @@
 }
 
 .my-footer{
-  background: #000;
+  background: #0d1119;
   display: flex;
   justify-content: center;
-  padding: 80px 0px 30px 0px;
+  padding: 60px 0px 30px 0px;
 }
 
 .my-input{
-  padding: 10px;
+  padding: 10px 15px 10px 10px;
   border: 0px solid;
   font-family: 'ProximaNova';
   font-weight: 300;
   font-size: 15 px;
   border-radius: 2px;
-  height: 29px;
+  height: 25px;
+  margin-left: 45px;
+}
+
+.my-input2{
+  padding: 10px 130px 10px 10px;
+  border: 0px solid;
+  font-family: 'ProximaNova';
+  font-weight: 300;
+  font-size: 15 px;
+  border-radius: 2px;
+  height: 25px;
 }
 
 .my-button{
@@ -263,12 +286,12 @@
   font-family: 'ProximaNova';
   font-weight: 600;
   font-size: 15 px;
-  padding: 10px 60px 10px 40px;
+  padding: 10px 40px 10px 20px;
   position: relative;
   border-radius: 2px;
   border: 0px solid;
-  margin-right: 300px;
-  height: 49px;
+  margin-right: 120px;
+  height: 47px;
 }
 
 .my-button:after{
@@ -279,7 +302,7 @@
   width: 18px;
   height: 18px;
   position: absolute;
-  right: 30px;
+  right: 10px;
 }
 
 .social-buttoms{
