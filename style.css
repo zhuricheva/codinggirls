@@ -17,6 +17,12 @@
 }
 
 @font-face{
+  src: url("./fonts/OpenSans/OpenSans-Bold.ttf");
+  font-family: 'OpenSans';
+  font-weight: 700;
+}
+
+@font-face{
   src: url("./fonts/OpenSans/OpenSans-Light.ttf");
   font-family: 'OpenSans';
   font-weight: 100;
@@ -54,66 +60,71 @@
 .main-menu{
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 475px;
   list-style: none;
+  padding-top: 20px;
+  padding-right: 65px;
 }
 
 .menu-link{
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .main-menu-container{
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
+  padding-left: 45px;
+  padding-top: 35px;
   font-family: 'AvenirNextCyr';
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .header{
   background-image: url('./images/background.jpg');
-  height: 890px;
+  height: 835px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .main-title{
   color: #ffffff;
   font-size: 40px;
-  margin-top: 300px;
-  margin-left: 50px;
   text-transform: uppercase;
   font-family: 'AvenirNextCyr';
   font-weight: 300;
+  position: absolute;
+  bottom: 130px;
+  left: 105px;
 }
 
 .subtitle{
   color: #ffffff;
   font-size: 15px;
-  margin-left: 200px;
   text-transform: uppercase;
-  font-family: 'AvenirNextCyr';
-  font-weight: 300;
+  font-family: 'OpenSans';
+  font-weight: 700;
+  position: absolute;
+  bottom: 135px;
+  left: 260px;
 }
 
 .main{
   background: #a2ca28;
+  min-width: 1500px;
 }
 
 .benefits{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 1200px;
+  max-width: 1100px;
+  min-width: 1100px;
   margin: 0 auto;
-  padding-left: 0;
   color: #ffffff;
-  padding-top: 80px;
-
+  padding-top: 90px;
 }
 
 .link-item{
@@ -130,12 +141,24 @@
 
 .benefits__text{
   font-size: 14px;
+  font-family: 'ProximaNova';
+  font-weight: 300;
+  line-height: 1.7;
+  width: 250px;
+  height: 110px;
+  padding-top: 20px;
+}
+
+.row{
+  padding-top: 15px;
 }
 
 .title-red{
   color: #fd634e;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 250;
 }
 
 .title-green{
@@ -143,11 +166,15 @@
   font-size: 35px;
   font-weight: 100;
   text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .text-gray{
   color: #656e74;
   font-size: 14px;
+  margin: 15px 15px 5px 15px;
+  line-height: 1.7;
 }
 
 .link-square{
@@ -158,13 +185,13 @@
 .square{
   background: #ffffff;
   text-align: center;
-  padding: 50px;
-  width: 294px;
-  height: 294px;
+  padding: 15px;
+  width: 325px;
+  padding-top: 55px;
 }
 
 .all_sequence{
-  padding-top: 80px;
+  padding-top: 105px;
 }
 
 .sequence{
@@ -174,65 +201,64 @@
 
 .images{
   position: relative;
+  height: 375px;
 }
 
 .images::before{
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(13,17,26, 0.5);
+  background: rgba(0,0,0, 0.3);
   position: absolute;
+  content: '';
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .images-hover{
-  display: none;
+  transition: all 0.5s;
+  opacity: 0;
   position: absolute;
-  top: 0;
-  width: 794px;
-  height: 394px;
+  top: 50%;
+  margin-top: -24px;
+  width: 100%;
   text-align: center;
 }
 
 .images:hover .images-hover{
- display: block;
+ opacity: 1;
 }
 
 .images:hover::before{
-  content: '';
-}
-
-.images-hover2{
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 794px;
-  height: 394px;
-  text-align: center;
-}
-
-.images:hover .images-hover2{
- display: block;
-}
-
-.images:hover::before{
-  content: '';
+  opacity: 1;
 }
 
 .my-footer{
-  background: #000;
+  background: #0d1119;
   display: flex;
   justify-content: center;
-  padding: 80px 0px 30px 0px;
+  padding: 60px 0px 30px 0px;
+  min-width: 1500px;
 }
 
 .my-input{
-  padding: 10px;
+  padding: 10px 15px 10px 10px;
   border: 0px solid;
   font-family: 'ProximaNova';
-  font-weight: 600;
-  font-size: 15 px;
+  font-weight: 300;
+  font-size: 15px;
   border-radius: 2px;
-  height: 29px;
+  height: 25px;
+}
+
+.my-input2{
+  padding: 10px 130px 10px 10px;
+  border: 0px solid;
+  font-family: 'ProximaNova';
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 2px;
+  height: 25px;
 }
 
 .my-button{
@@ -241,12 +267,12 @@
   font-family: 'ProximaNova';
   font-weight: 600;
   font-size: 15 px;
-  padding: 10px 60px 10px 40px;
+  padding: 10px 40px 10px 20px;
   position: relative;
   border-radius: 2px;
   border: 0px solid;
-  margin-right: 300px;
-  height: 49px;
+  margin-right: 120px;
+  height: 46px;
 }
 
 .my-button:after{
@@ -257,7 +283,7 @@
   width: 18px;
   height: 18px;
   position: absolute;
-  right: 30px;
+  right: 10px;
 }
 
 .social-buttoms{
@@ -271,11 +297,20 @@
  border-radius: 50%;
  margin-left: 20px;
  position: relative;
-
 }
 
 .fb{
   background: #2e3192
+}
+
+.fb:hover{
+  animation: socAnimation 0.5s forwards;
+}
+
+@keyframes socAnimation{
+  100% {
+    background: #a2ca28;
+  }
 }
 
 .fb:before{
@@ -294,6 +329,10 @@
  background: #00aeef
 }
 
+.tw:hover{
+  animation: socAnimation 0.5s forwards;
+}
+
 .tw:before{
   content: '';
   background-image: url("./images/tw.svg");
@@ -310,9 +349,13 @@
  background: #ed3223
 }
 
+.yt:hover{
+  animation: socAnimation 0.5s forwards;
+}
+
 .yt:before{
   content: '';
-  background-image: url("./images/ln.svg");
+  background-image: url("./images/yt.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -326,11 +369,15 @@
  background: #171a8e
 }
 
+.ln:hover{
+  animation: socAnimation 0.5s forwards;
+}
+
 .ln:before{
   content: '';
   background-image: url("./images/ln.svg");
   background-repeat: no-repeat;
-  width: 18px;
+  width: 20px;
   height: 18px;
   display: block;
   position: absolute;
